@@ -36,9 +36,12 @@ const sayilar = [
 */
 
 //Örneğin çözümü:
-function KareninAlani(kenaruzunlugu) {
+let KareninAlani = (kenaruzunlugu) => {
   return kenaruzunlugu * kenaruzunlugu;
 }
+let kenarUzunlugu = 10; 
+let alan = KareninAlani(kenarUzunlugu); 
+console.log("Karenin alanı:", alan); 
 
 /* (Oto test yok) Yukarıdaki KareninAlani fonksiyonunu kenar uzunluğu = 10 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin (console.log)  */
 
@@ -50,9 +53,12 @@ function KareninAlani(kenaruzunlugu) {
 	4. Hesaplanan çemberin çevresi döndürülecektir.
 */
 
-function CemberinCevresi(/* kodlar buraya */) {
-  /* kodlar buraya */
+let CemberinCevresi = (yaricap) => {
+  return 2 * pi * yaricap;
 }
+let yaricap = 5; 
+let cevre = CemberinCevresi(yaricap); 
+console.log("Çemberin çevresi:", cevre);
 
 /* (Oto test yok) Yukarıdaki CemberinCevresi fonksiyonunu yarıçap = 5 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin (console.log)  */
 
@@ -64,9 +70,11 @@ function CemberinCevresi(/* kodlar buraya */) {
 	4. Hesaplanan çemberin alanı döndürülecektir.
 */
 
-function CemberinAlani(/* kodlar buraya */) {
-  /* kodlar buraya */
+function CemberinAlani(yaricap, pi) {
+  let alan = pi * yaricap * yaricap;
+  return alan;
 }
+
 
 /* (Oto test yok) Yukarıdaki CemberinAlani fonksiyonunu yarıçap = 15 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin (console.log)  */
 
@@ -100,6 +108,7 @@ let ucetambolunenler,
 // 3a çözümü
 
 /* kodlar buraya */
+
 
 // 3b çözümü:
 
